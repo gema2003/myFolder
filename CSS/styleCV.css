@@ -1,0 +1,439 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Ubuntu';
+}
+
+.download-btn {
+	position: absolute;
+	cursor: pointer;
+	text-align: center;
+	top: 190px;
+	right: 120px;
+	z-index: 10;
+}
+
+.download-btn a {
+	text-decoration: none;
+	font-size: 3rem;
+	color: #F5F5F5;
+}
+
+.download-btn a:hover {
+	color: #008080;
+}
+
+.download-btn p {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.home {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+	background: linear-gradient(to right top, #00008B, #7FFFD4);
+}
+
+#home-overlay {
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	position: relative;
+
+}
+
+.container {
+	display: flex;
+	width: 90%;
+	height: auto;
+	margin: 1rem auto;
+	flex-direction: column;
+	border-radius: 2rem;
+	padding: 1rem;
+	background: linear-gradient(
+		to right bottom, 
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.2),  
+		rgba(255, 255, 255, 0.8)
+	);
+}
+
+.navigator, .header, .main, .aside {
+	margin: 0.5rem;
+	border-radius: 1rem;
+}
+
+.navigator {
+	display: flex;
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+	background: linear-gradient(
+		to right bottom, 
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.3),
+		rgba(255, 255, 255, 0.2),  
+		rgba(255, 255, 255, 0.8)
+	);
+}
+
+.navigator img {
+	height: 182px;
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+
+#content-name {
+	text-transform: uppercase;
+	display: grid;
+	margin-left: 1rem;
+}
+
+.txt {
+	color: white;
+  	font-size: 40px;
+  	font-weight: 950;
+  	background: repeating-linear-gradient(-45deg, 
+  		#00FFFF 21.4%,  
+  		#7FFF00 24.28%, 
+  		#9932CC 28.56%, 
+  		#FF00FF 30.84%, 
+  		#FFD700 17.14%,
+  		#FF0000 30.2%,
+  		#FF8C00 29.5%, 
+  		#FF7F50 30.7%, 
+  		#7FFFD4 25.3%,
+  		#0000FF 38.7%);
+  	background-size: 600vw 600vw;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	animation: slide 120s linear infinite forwards;
+}
+
+@keyframes slide {
+	0% {
+		background-position-x: 0%; 
+	}
+	100% {
+		background-position-x: 600vw;
+	}
+}
+
+#content-info {
+	color: #F5F5F5;
+	line-height: 3rem;
+	display: block;
+}
+
+.header {
+	display: flex;
+	border-radius: 1rem;
+	background: linear-gradient(
+		to right bottom, 
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.3),
+		rgba(255, 255, 255, 0.2),  
+		rgba(255, 255, 255, 0.8)
+	);
+}
+
+#studies {
+	line-height: 2rem;
+	color: #F5F5F5;
+	width: 50%;
+	height: 100%;
+	flex-shrink: 0;
+	display: block;
+	padding: 1.5rem;
+}
+
+#studies h2 {
+	padding-bottom: 0.5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#studies i {
+	font-size: 1.2rem;
+}
+
+#developer-lang {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.logos img {
+	width: 100px;
+	height: 100px;
+}
+
+.main {
+	flex-basis: 20rem;
+	flex-grow: 2;
+	flex-shrink: 0;
+	padding: 1.5rem;
+	background: linear-gradient(
+		to right bottom, 
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.3),
+		rgba(255, 255, 255, 0.2),  
+		rgba(255, 255, 255, 0.8)
+	);
+}
+
+.main h1 {
+	color: #F5F5F5;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.accordion {
+	width: 100%;
+	max-width: 1000px;
+	margin: 2rem auto;
+}
+
+.accordion-item {
+	background: linear-gradient(
+		to right bottom, 
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.2),  
+		rgba(255, 255, 255, 0.8)
+	);
+	margin: 1.7rem 0;
+	height: auto;
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 4px 0 #D3D3D3;
+}
+
+.accordion-item-header {
+	font-size: 1rem;
+	padding: 0.7rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	color: #F0FFF0;
+}
+
+.accordion-item-header::after {
+	content: '\2026';
+	font-size: 1.5rem;
+	position: absolute;
+	right: 1rem;
+}
+
+.accordion-item-header.active::after {
+	content: '\00d7';
+	font-size: 1.5rem;
+}
+
+.accordion-item-body {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-out;
+}
+
+.accordion-item-body-content {
+	border-top: 3px double #D3D3D3;
+	color: #FAEBD7;
+	padding: 1rem;
+	text-align: left;
+	line-height: 1.5rem;
+}
+
+.accordion-item-body h3 {
+	color: #191970;
+}
+
+.accordion-item-body h4 {
+	color: #E0FFFF;
+}
+
+.accordion-item-body h5 {
+	color: #00FFFF;
+}
+
+.accordion-item-body a {
+	color: #00FFFF;
+	text-decoration: none;
+}
+
+.accordion-item-body p {
+	color: #1a0a1a;
+}
+
+.aside {
+	background: linear-gradient(
+		to right bottom, 
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.3),
+		rgba(255, 255, 255, 0.2),  
+		rgba(255, 255, 255, 0.3)
+	);
+	flex-shrink: 0;
+	flex-basis: 20rem;
+	display: block;
+}
+
+.skills {
+	color: #F5F5F5;
+	padding: 1.4rem;
+	font-size: 1.1rem;
+	line-height: 1.7rem;
+	height: 50%;
+}
+
+.skills h1 {
+	text-transform: uppercase;
+}
+
+.summary {
+	color: #F5F5F5;
+	padding: 1.4rem;
+	line-height: 1.4rem;
+	height: 50%;
+}
+
+.summary h1 {
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 52rem) {
+	.download-btn {
+		top: 70px;
+		right: 90px;
+	}
+
+	#studies {
+		line-height: 2rem;
+	}
+
+	#studies h2 {
+		margin-bottom: 1rem;
+	}
+
+	#developer-lang {
+		margin-top: 1.1rem;
+	}
+}
+
+
+@media screen and (max-width: 32rem) {
+	.download-btn {
+		top: 40px;
+		right: 20px;
+	}
+
+	#home-overlay {
+		background-color: rgba(0,0,0,0.5);
+		padding: 0;
+		padding-top: 1px;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0;
+		background: linear-gradient(
+		to right bottom, 
+		rgba(255, 255, 255, 0.5),
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.3),  
+		rgba(255, 255, 255, 0.5)
+	);
+	}
+
+	.navigator {
+		display: block;
+		text-align: center;
+		width: 100%
+		left:0;
+	}
+
+	.navigator img {
+		height: 130px;
+		border-radius: 50%;
+	}
+
+	.txt {
+		font-size: 35px;
+	}
+
+	#content-info {
+		font-size: 12px;
+		line-height: 1.8rem;
+		text-align: left;
+	}
+
+	.header {
+		display: block;
+		width: 100%
+		left:0;
+	}
+
+	#studies {
+		width: 100%;
+	}
+
+	#developer-lang {
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 52rem) {
+	.container {
+		display: grid;
+		grid-template-rows: 230px 230px 1fr 10px;
+		grid-template-columns: repeat(3,1fr); 
+	}
+
+	.navigator {
+		grid-row: 1 / 2;
+		grid-column: 1 / span 3;
+	}
+
+	.header {
+		grid-row: 2 / 3;
+		grid-column: 1 / span 3;
+	}
+	
+	.main {
+		grid-row: 3 / 4;
+		grid-column: 1 / span 2;
+	}
+
+	.aside {
+		grid-row: 3 / 4;
+	}
+
+
+
+
+
+
+
+
+
+
