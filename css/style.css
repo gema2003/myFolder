@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Ubuntu';
+	background: linear-gradient(
+		to right top, #800080, #00CED1);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: -1;
+}
+
+#Form-1 {
+	width: 350px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 100px auto;
+	text-align: center;
+	line-height: 1.5rem;
+	border-radius: 2rem;
+	-webkit-backdrop-filter: blur(10px);
+	background: linear-gradient(
+		to right bottom, 
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.2),  
+		rgba(255, 255, 255, 0.8)
+	);
+}
+
+#Form-1 h1 {
+	margin: 1rem 0;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 6px;
+	text-shadow: 2px 2px 4px #7FFFD4;
+}
+
+#Form-1 p {
+	margin: 1rem 0;
+	color: #F5F5F5;
+}
+
+input {
+	font-size: 1.3rem;
+	border: none;
+	border-radius: 1rem;
+	text-align: center;
+}
+
+#access-box {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+
+}
+
+input[type="text"], input[type="password"] {
+	height: 2.5rem;
+}
+
+
+input[type="button"] {
+	width: 200px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #708090;
+	border-radius: 1rem;
+	text-transform: uppercase;
+	background: linear-gradient(
+		to right bottom, #00008B, #7FFFD4, #191970)
+}
+
+input[type="button"]:hover {
+	color: #111;
+	font-size: 1.6rem;
+}
+
+@media (max-width: 350px) {
+	#Form-1 {
+		width: 300px;
+		margin: 30px auto;
+	}
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Folder</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/styleFD.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+	<div id="home">
+		<img src="../images/bg0.jpg" id="home-bg-image" alt="">
+		<div id="home-overlay">
+			<div class="slider-container">
+				<!-- Slide 1 API -->
+				<div class="slide">
+					<div class="main">
+						<i class="fas fa-share">Push & Slide</i>
+		          		<iframe width="90%" height="90%" src="https://www.youtube.com/embed/ykiGsiCJnZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		        	</div>
+					<div class="aside">
+						<div id="logos">
+		          			<img src="../images/javaScript.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/node.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/express.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/mongo.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/jwt.png" alt="" style="width: 40px; height: 40px;">
+						</div><hr>
+						<div id="title">
+							<h3>API REST</h3>
+						</div>
+						<div id="info">
+							<p>
+		          				API que prestar servicio como red social estructurada de la siguiente forma:<br>
+		          				<span>(en el video es utilizado Insomnia para simular el cliente)</span>
+		          				<br><br>
+		          				<ul>
+		          					<li>
+		          						Crear nuevo usuario: el usuario como en toda red puede 
+		          						registrarse usando un username, email, password, name & photo,
+		          						con todas sus respectivas verificaciones, al crearse dicho 
+		          						usuario en la base de datos (MongoDB) se crea un id unico para 
+		          						el usuario, y su contraseña queda resgistrada en dicho servidor 
+		          						en secreto por medio de esquema de encriptación (crypto).
+		          					</li><br>
+		          					<li>
+		          						Inicio de sesión: ya creado el usuario en la base de datos este 
+		          						puede iniciar su sesión por medio del username o em@il & password y 
+		          						automaticamente se le devolvera un token de autenticación de usuario, renovandose este cada vez que el usuario cierre su 
+		          						sesión y vuelva a iniciarla en su aplicación.
+		          					</li><br>
+		          					<li>Posts: ya en su cuenta creada, el usuario puede crear, modificar 
+		          						o eliminar posts (ojo no puede eliminar o modificar posts que no 
+		          						esten asociados a su id (token)), puede de obtener todos los 
+		          						posts de otros usuarios o usuario en especifico, también los 
+		          						propios o uno en especifico, puede salvar posts de otros 
+		          						usuarios que le interesen y por ultimo poder dar like a los posts propios y de otros usuarios (un like por post).
+		          					</li><br>
+		          					<li>
+		          						Usuarios: al igual que los posts, el usuario puede modificar 
+		          						los datos de su cuenta y enviar dichos cambios a la base de 
+		          						datos (update user), puede obtener su información, y obtener la información de otros usuarios en especifico (ver otros perfiles), en 
+		          						fin la api esta lista para ser instalada en un servidor y prestar 
+		          						servicio como una red social.
+		          					</li><br>
+		          				</ul>
+		          				Otros modulos utilizados cookie-parser, cors, debug, dotenv, morgan y 
+		          				mongoose puedes apreciar el código en: <a href="https://github.com/gema2003/API_Restful" target="_Blank">(GitHub) / Api Restful</a>
+		          			</p>
+						</div>
+		        	</div>
+				</div>
+				<!-- Slide 2 Database JSON -->
+				<div class="slide">
+					<div class="main">
+		          		<iframe width="90%" height="90%" src="https://www.youtube.com/embed/dRzeKh50UQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		        	</div>
+					<div class="aside">
+		          		<div id="logos">
+		          			<img src="../images/javaScript.png" alt="" style="width: 40px; height: 40px;">
+							<img src="../images/node.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/express.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/ejs.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/Bootstrap.png" alt="" style="width: 40px; height: 40px;">
+						</div><hr>
+		          		<div id="title">
+							<h3>App Módulo Nativo fs</h3>
+						</div>
+						<div id="info">
+							<p>
+								<ul>
+									<li>
+										Esta aplicación esta estructurada utilizando EJS (Easy Java 
+		          						Simulations) para procesar el código html de forma fragmentada y ordenada, cuenta con una base de datos interna (archivo json) para almacenar la información que sea digitada desde la aplicación.
+									</li><br>
+									<li>
+										Cree esta aplicación por la inquietud de saber como funciona módulo nativo de Node "fs" que permite interactuar entre los archivos del sistema, en este caso con el archivo json, el cual se encarga directamente de almacenar la información digitada desde la 
+										aplicación, añadi también el modulo crypto para crearles un id a 
+										cada elemento que se almacene en la base de datos, y así al 
+										eliminar alguno de estos sea directamente por su id.
+									</li>
+								</ul><br>
+		          				Función de la aplicación, guardar titulo de libro, el autor, la imagen
+		          				y una pequeña descripción, (no es para guardar información delicada) 
+		          				otros modulos utilizados morgan y crypto-js, puedes apreciar el código 
+		          				en: <a href="https://github.com/gema2003/Nodejs_FS" target="_Blank">(GitHub) / App Database</a>
+		          			</p>
+						</div>
+		        	</div>
+				</div>
+				<!-- Slide 3 Vue -->
+				<div class="slide">
+					<div class="main">
+		          		<iframe width="90%" height="90%" src="https://www.youtube.com/embed/kHxthHP-SQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		        	</div>
+					<div class="aside">
+		          		<div id="logos">
+		          			<img src="../images/javaScript.png" alt="" style="width: 40px; height: 40px;">
+							<img src="../images/vue.png" alt="" style="width: 40px; height: 40px;">
+							<img src="../images/Bootstrap.png" alt="" style="width: 40px; height: 40px;">
+						</div><hr>
+		          		<div id="title">
+							<h3>Apps con Vue</h3>
+						</div>
+						<div id="info">
+							<p>
+		          				Creación de tres aplicaciones con el framework de Vue.js
+		          				<br><br>
+		          				<ul>
+		          					<li>
+		          						App Inicio de sesión: esta aplicación esta creada solo para
+		          						experimentar el inicio y la implementación de otras librerias
+		          						como bootstrap en un proyecto con el framework Vue no cuenta 
+		          						con mayores caracteristicas.
+		          					</li><br>
+		          					<li>
+		          						App Dinamica: aplicación creada para inicar a experimentar
+		          						con el ciclo de vida de Vue (created, mounted, destroyed, etc.)
+		          						dicha aplicación tiene como función que al precionar sobre
+		          						cada artículo, se incremente el contador situado a el lado
+		          						derecho de cada artículo y al tener una cantidad mayor que 
+		          						los demas este se posesione dinamicamente en la parte superior,
+		          						también implemente un pequeño boton que reinicia todos los
+		          						contadores a cero, puedes apreciar el código en: <a href="https://github.com/gema2003/App1_Vue" target="_Blank">(GitHub) / Mi App Dinamica con Vue </a>
+		          					</li><br>
+		          					<li>
+		          						App Carrito de Compras: Esta es una aplicación que simula 
+		          						consumir la información de una base de datos (api json) por 
+		          						medio de fetch para luego ser pintada dinamicamente en el DOM, 
+		          						dividiendo el código en pequeños fragmentos para poder hacer la
+		          						aplicación escalable a futuro, la aplicación cuenta con una tabla
+		          						oculta al iniciar la aplicación, pero visible cuando inicias a 
+		          						realizar compras (el carrito) esta suma la cantidad de los servicios
+		          						y los monto de los mismo, también multiplica la cantidad por el monto,
+		          						añadi botones para sumarle o restarle a cantidad, ademas de contar con un boton que reinicia a cero la tabla (el carrito), en la parte 
+		          						de las tarjetas unicamente tenemos el boton para añadir la compra de 
+		          						el servicio a la tabla (el carrito), la aplicación es completamente 
+		          						adaptable gracias a bootstrap, puedes apreciar el código en: 
+		          						<a href="https://github.com/gema2003/App_ShoppingCart_Vue" target="_Blank">(GitHub) / App Carrito con Vue </a>
+		          					</li><br>
+		          				</ul>
+		          			</p>
+						</div>
+		        	</div>
+				</div>
+				<!-- Slide 4 Javascript Ajax -->
+				<div class="slide">
+					<div class="main">
+		          		<iframe width="90%" height="90%" src="https://www.youtube.com/embed/vHjxJQz_Rmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		        	</div>
+					<div class="aside">
+		          		<div id="logos">
+		          			<img src="../images/html.png" alt="" style="width: 40px; height: 40px;">
+							<img src="../images/css.png" alt="" style="width: 40px; height: 40px;">
+							<img src="../images/javaScript.png" alt="" style="width: 40px; height: 40px;">
+							<img src="../images/jQuery.png" alt="" style="width: 40px; height: 40px;">
+						</div><hr>
+		          		<div id="title">
+							<h3>Apps Javascript</h3>
+						</div>
+						<div id="info">
+							<p>
+								Aplicación de consumo de api con Ajax:
+								<br><br>
+								<ul>
+									<li>
+										Es una aplicación que simula consumir la información de una
+										base de datos (api json) para pintarla dinamicamente en el
+										DOM con javascript ajax, también utilice jQuery ajax para
+										consumir y pintar la información dentro del carrito, la 
+										aplicación cuenta con estructura inicial en un archivo html.
+		          					</li><br>
+									<li>
+										Añadi el cdn de bootstrap al archvio html para dar los 
+										estilos y volver adaptable la aplicación a los distintos 
+										tamaños de pantallas en los dispositivos, adicional cree un 
+										archivo css que basicamente brinda los efecto a las tarjetas
+										y a los botones de añadir al carrito.
+									</li><br>
+									<li>
+										La aplicación inicia con el carrito en 0 (en rojo) y 
+										dentro una tarjeta con la leyenda de vacio, cuando inician
+										añadir productos a el carrito la cantidad incrementa y segun 
+										el numero de productos añadidos este los cuenta y muestra la 
+										cantidad (en verde), en la pestaña desplegable del carrito
+										se añaden una tajeta por cada compra con su respectiva imagen 
+										código, cantidad segun las veces añadido y el precio multiplicado
+										por la cantidad, cada tarjeta añadida en el carrito cuenta con 
+										boton para eliminarlo de la tarjeta, en la parte inferior se
+										encuentra el total de los montos, y dos botones, uno para efectuar
+										la compra que se muestra en un modal con una tabla que solicita
+										los datos respectivos para la compra, y el otro para reiniciar el 
+										carrito a cero, todos la información del carrito es almacenada 
+										en localStorage simulando una base de datos para la persistencia 
+										de la información, puedes apreciar el código en: 
+										<a href="https://github.com/gema2003/JS_Shopping_Cart" target="_Blank">(GitHub) / App Carrito Javascript </a>
+									</li>
+								</ul>
+		          				
+		          			</p>
+						</div>
+		        	</div>
+				</div>
+				<!-- Slide 5 CRUD Javascript -->
+				<div class="slide">
+					<div class="main">
+		          		<iframe width="90%" height="90%" src="https://www.youtube.com/embed/9tssrh3-h5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		        	</div>
+					<div class="aside">
+		          		<div id="logos">
+		          			<img src="../images/javaScript.png" alt="" style="width: 40px; height: 40px;">
+							<img src="../images/Bootstrap.png" alt="" style="width: 40px; height: 40px;">
+							<img src="../images/jQuery.png" alt="" style="width: 40px; height: 40px;">
+						</div><hr>
+		          		<div id="title">
+							<h3>CRUD Javascript</h3>
+						</div>
+						<div id="info">
+							<p>
+								<ul>
+									<li>
+										Estructurada en un archivo html, y realizando todos
+										los estilos con bootstrap, dandole dinamismo con
+										ECMAScript 6, esta fue mi aplicación final al terminar
+										de aprender la nueva forma de escribir código javascript
+										y crear un CRUD por medio de modulos quedando de 
+										una forma mas ordenada todo el código y permitiendo 
+										ser reutilizable y escalable a futuro.
+									</li><br>
+									<li>
+										Con esta aplicación se pueden crear objetos en los cuales
+										se debe ingresa en ellos el nombre, la profesión y un 
+										completado (checkbox opcional) los campos de nombre y profesión 
+										son requeridos, si alguno o ambos no fuesen ingresados
+										dinamicamente se presenta un modal de alerta solicitando 
+										dichos datos, cada objeto cuenta con dos botones uno para 
+										modificar los datos y el otro para eliminar el objeto por
+										por completo (para mantener la persistencia de los objetos
+										se almacena la información en localStorage), añadi en la 
+										barra de navegación un buscador el cual filtra los objetos por completados, no completados, nombre o profesión escritos en el 
+										input, iconos de font awesome, puedes apreciar el código en: 
+										<a href="https://github.com/gema2003/JS_CRUD" target="_Blank">(GitHub) / CRUD con ECMAScript6 </a>
+									</li><br>
+								</ul>
+		          			</p>
+						</div>
+		        	</div>
+				</div>
+				<!-- Slide 6 APIs Internas -->
+				<div class="slide">
+					<div class="main">
+		          		<iframe width="90%" height="90%" src="https://www.youtube.com/embed/CGTzQNTNUbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		        	</div>
+					<div class="aside">
+		          		<div id="logos">
+		          			<img src="../images/html.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/css.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/javaScript.png" alt="" style="width: 40px; height: 40px;">
+						</div><hr>
+		          		<div id="title">
+							<h3>APIs Locales</h3>
+						</div>
+						<div id="info">
+							<p>
+								Esta es una aplicación con la cual podemos consumir todos los
+								recursos (APIs internas) de nuestro sistema operativo.<br>
+		          				<ul>
+		          					<li>
+		          						Reloj: accedo al toLocaleTimeString y al precionar el boton
+		          						me muestra el reloj interno, oculto con el siguente y coleque
+		          						una alarma.
+		          					</li>
+		          					<li>
+		          						Teclado: accedo a los shortcut de teclado para despues agregarles
+		          						una funcionalidad en combinación.
+		          					</li>
+		          					<li>
+		          						Fecha: accedo a getTime y con un setInterval obtengo un contador
+		          						en reversa, dandome detalle de los días y horas que faltan para mi 
+		          						cumpleaños
+		          					</li>
+		          					<li>
+		          						Adaptabilidad: como con una media query de css, hice que el DOM
+		          						antes de los 1024px colocara video y mapa, pero más pequeña la 
+		          						pantalla colocara solo la referencias.
+		          					</li>
+		          					<li>
+		          						Testeo: pasandole al DOM datos de una url, alto y ancho para que
+		          						abra una nueva ventana, esta era forma antigua de testear si las
+		          						aplicaciones eran adaptables a dispositivos mas pequeño. 
+		          					</li>
+		          					<li>
+		          						Detectar Dispositivo: con User Agent obtengo la información del 
+		          						dispositivo por el cual esta siendo visitada la pagina web o app. 
+		          					</li>
+		          					<li>
+		          						Activar Camara: con getUserMedia obtengo acceso a la cama del 
+		          						dispositivo
+		          					</li>
+		          					<li>
+		          						Filtro: construyo un filtro con EventTarget.
+		          					</li>
+		          					<li>
+		          						Mostrar Elemento al Azar: construyo un función que toma al azar uno 
+		          						de los objetos del DOM y lo muestra como ganador.
+		          					</li>
+		          					<li>
+		          						Slider Adaptable: Forma correcta de construir un slider con javascript.
+		          					</li>
+		          					<li>
+		          						Video Inteligente: construyo una función que se encarge de pausar 
+		          						la reproducción de el video, utilizando el tamaño del scroll
+		          					</li>
+		          					<li>
+		          						Validación de Formulario: forma correcta de construidr un formulario.
+		          					</li>
+		          					<li>
+		          						Narrador de Texto: construyo un narrador de texto utilizando las 
+		          						distintas voces que traen los dispositivos.
+		          					</li>
+		          				</ul>
+		          				Cuenta con diseño adaptable y funciones como detección de conexión red
+		          				saber en que sección de la pagina me encuentro entre otras, puedes apreciar 
+		          				el código en: <a href="https://github.com/gema2003/APIS_Locales" target="_Blank">(GitHub) / APIs Internas</a>
+		          			</p>
+						</div>
+		        	</div>
+				</div>
+				<!-- Slide 5 Cards CSS -->
+				<div class="slide">
+					<div class="main">
+		          		<iframe width="90%" height="90%" src="https://www.youtube.com/embed/nspMsO_4gZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		        	</div>
+					<div class="aside">
+		          		<div id="logos">
+		          			<img src="../images/html.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/css.png" alt="" style="width: 40px; height: 40px;">
+		          			<img src="../images/javaScript.png" alt="" style="width: 40px; height: 40px;">
+						</div><hr>
+		          		<div id="title">
+							<h3>Cards CSS</h3>
+						</div>
+						<div id="info">
+							<p>
+								Construcción de diseños de tarjetas con CSS.<br>
+								<ul>
+									<li>
+										Estructuradas con html5, utilizando css para el diseño con flexbox 
+										y grid y agregando un poco de animación con javascript, desarrolle 
+										estas tarjetas para mostrar un poco mi creatividad en el desarrollo 
+										con CSS.
+									</li>
+									<li>
+										La primera es una tarjeta con efeto de movimiento y acceso a la 
+										información al momento de colocar encima de ella el cursor.
+									</li>
+									<li>
+										Las tarjetas pequeñas, guardan imagenes en 4K y con un efecto 
+										de saltar y salir al frente estas pueden ser precionadas para 
+										mostrar dicha información, puedes apreciar el código en: 
+										<a href="https://github.com/gema2003/Cards_CSS" target="_Blank">(GitHub) / Api Restful</a>
+									</li><br>
+									<li>
+										La ultima tarjeta es una replica en digital de mi DPI cambiando 
+										el diseño original por uno mas innovador, tal como a mi me hubiese 
+										gustado que fuese el diseño real, tiene efecto de transicion que 
+										al colocar el cursor encima automaticamente muestra la parte tracera, 
+										mostrando asi toda la iformación restante.
+									</li>
+								</ul>
+								Es nada mas una muestra de lo creativo que puedo llegar a ser al 
+								obtener una oportunidad como desarrollador Frontend.
+		          			</p>
+						</div>
+		        	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script type="text/javascript" src="../js/app.js"></script>
+</body>
+</html>
