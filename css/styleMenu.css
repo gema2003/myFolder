@@ -36,9 +36,9 @@ body {
 }
 
 .container {
-	height: 100vh;
 	padding: 0 3rem;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -174,7 +174,6 @@ body {
 
 @media only screen and (max-width: 52rem) {
 	.container {
-		justify-content: center;
 		padding: 0 2rem;
 	}
 }
