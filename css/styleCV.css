@@ -92,7 +92,6 @@ body {
 }
 
 .txt {
-	display: grid;
 	color: white;
   	font-size: 3rem;
   	font-weight: 700;
@@ -472,6 +471,10 @@ body {
 @media screen and (max-width: 20rem) {
 	.modal-dialog {
 		width: 100%;
+	}
+	.txt {
+		font-size: 1rem;
+  		font-weight: 300;
 	}
 }
 
