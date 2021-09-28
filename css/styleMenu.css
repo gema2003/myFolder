@@ -37,7 +37,6 @@ body {
 .container {
 	padding: 0 3rem;
 	display: flex;
-	
 	align-items: center;
 }
 
@@ -92,7 +91,7 @@ body {
 
 #social {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .outer {
