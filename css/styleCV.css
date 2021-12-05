@@ -132,6 +132,11 @@ body {
 	display: block;
 }
 
+#content-name {
+	padding: 1rem;
+
+}
+
 .header {
 	display: flex;
 	justify-content: center;
@@ -514,7 +519,7 @@ body {
 @media screen and (min-width: 52rem) {
 	.container {
 		display: grid;
-		grid-template-rows: 300px 300px 1fr;
+		grid-template-rows: 350px 400px 1fr;
 		grid-template-columns: repeat(3,1fr); 
 	}
 
