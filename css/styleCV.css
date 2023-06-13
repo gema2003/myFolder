@@ -501,12 +501,12 @@ body {
 	}
 
 	.modal-content {
-		height: 90%;
+		height: 100%;
 	}
 
 	.modal-body {
 		font-size: 0.8rem;
-		overflow: auto;
+		overflow: scroll;
   		overflow-x: hidden;
 	}
 	.main {
