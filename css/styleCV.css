@@ -506,6 +506,8 @@ body {
 
 	.modal-body {
 		font-size: 0.8rem;
+		overflow: auto;
+  		overflow-x: hidden;
 	}
 	.main {
 		padding: 2.5rem 1rem;
