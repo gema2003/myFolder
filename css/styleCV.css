@@ -506,7 +506,7 @@ body {
 
 	.modal-body {
 		font-size: 0.8rem;
-		overflow: scroll;
+		overflow: auto;
   		overflow-x: hidden;
 	}
 	.main {
