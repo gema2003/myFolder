@@ -12,7 +12,7 @@ let isDragging = false,
 
 // add our event listeners
 slides.forEach((slide, index) => {
-  const slideImage = slide.querySelector('iframe')
+  const slideImage = slide.querySelector('.iframe')
   // disable default image drag
   slideImage.addEventListener('dragstart', (e) => e.preventDefault())
   // touch events
@@ -88,4 +88,24 @@ function setPositionByIndex() {
 function setSliderPosition() {
   slider.style.transform = `translateX(${currentTranslate}px)`
 };
+
+// Add logos to Div's
+const block = document.querySelectorAll('.main');
+
+(() => {
+  block.forEach((row) => {
+    const element = document.createElement('div');
+    element.id = 'logos'
+    element.innerHTML = `
+    <img src="../images/mongo.png">
+    <img src="../images/express.png">
+    <img src="../images/react.png">
+    <img src="../images/node.png">
+    <img src="../images/jwt.png">`;
+
+    row.prepend(element);
+});
+
+} )();
+
 

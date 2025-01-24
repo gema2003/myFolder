@@ -8,36 +8,24 @@
 
 body {
 	font-family: 'Ubuntu';
-	background-color: #1a1a1a;
-}
-
-#home {
-	height: 100%;
-	background: none;
-}
-
-#home-bg-image {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -1;
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 #home-overlay {
-	background-color: rgba(0,0,0,0.1);
-	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+	min-height: 100vh;
 	position: relative;
 }
 
-.container {
-	padding: 0 3rem;
+#container {
 	display: flex;
 	align-items: center;
+	min-height: 100vh;
+	padding: 0 0 0 3rem;
 }
 
 #home-centent-inner {
@@ -56,23 +44,35 @@ body {
 
 #home-heading h1 {
 	background: linear-gradient(#32CD32, #00FFFF);
-	-webkit-background-clip: text;
-    color: transparent; 
+    color: transparent;
+    -webkit-background-clip: text;
 	font-size: 2.4rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
+#home-heading h2 {
+	background: linear-gradient(#32CD32, #00FFFF);
+	-webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 #home-heading h3 span {
-	color: #DAA520;
+	background: linear-gradient(#f0cf6f, #d56abc);
+	-webkit-background-clip: text;
+	color: transparent;
 	font-weight: 400;
 	text-transform: lowercase;
 }
 
 #home-heading p {
-	font-size: 1rem;
+	background: linear-gradient(#32CD32, #00FFFF);
+	-webkit-background-clip: text;
+    color: transparent;
+    font-size: 1rem;
 	font-weight: 400;
-	color: #00FA9A;
 }
 
 #home-heading a {
@@ -82,16 +82,15 @@ body {
 	line-height: 2rem;
 	font-size: 1.1rem;
 	text-decoration: none;
+	transition: all .3s ease;
 }
 
 #home-heading a:hover {
-	color:  #DB7093;
-	font-size: 1.3rem;
-}
-
-#social {
-	display: flex;
-	justify-content: space-evenly;
+	background: linear-gradient(#2cb32c, #00dfdf);
+	-webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .outer {
@@ -112,12 +111,11 @@ body {
 	color: #777;
 	outline: none;
 	border: none;
-	font-size: 20px;
-	z-index: 9;
+	font-size: 18px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	cursor: pointer;
-
+	z-index: 9;
 }
 
 .outer button:hover {
@@ -127,14 +125,14 @@ body {
 }
 
 .button {
-	height: 50px;
-	width: 250px;
+	height: 45px;
+	width: 205px;
 	border-radius: 50px;
 }
 
 .button button {
-	height: 45px;
-	width: 245px;
+	height: 40px;
+	width: 200px;
 	border-radius: 50px;
 }
 
@@ -149,15 +147,15 @@ body {
 }
 
 .outer:hover span:nth-child(1) {
-	filter: blur(6px);
+	filter: blur(3px);
 }
 
 .outer:hover span:nth-child(2) {
-	filter: blur(12px);
+	filter: blur(6px);
 }
 
 .outer:hover {
-	background: linear-gradient(#14FFE9, #FFEB3B, #FF00E0);
+	background: linear-gradient(#00ffe7, #FFEB3B, #FF00E0);
 	animation: rotate 1.5s linear infinite;
 }
 
@@ -170,9 +168,8 @@ body {
 	}
 }
 
-@media only screen and (max-width: 52rem) {
-	.container {
-		padding: 0 2rem;
+@media only screen and (max-width: 768px) {
+	#container {
 		justify-content: center;
 	}
 }

@@ -10,16 +10,22 @@
 </head>
 <body>
 
-	<div id="Form-1">
-		<FORM name=form action="./html/menu.html">
-		<img src="images/inicio.png" alt="IMGLogo">
-		<h1>bienvenido</h1>
-		<P>Usuario:<br><INPUT type=text id=login> 
-		<P>Contraseña:<br><INPUT type=password id=password>
-			<div id="access-box">
-				<INPUT onclick=go() type=button value=Accesso>
+	<div id="Form_1">
+		<form name=form action="./html/menu.html">
+			<img src="images/inicio.png" alt="IMGLogo">
+			<h1>curriculum</h1>
+			<div class="input-group">
+				<input type=text id=login placeholder="&nbsp;">
+				<label for="">Usuario</label>
 			</div>
-		</FORM> 
+			<div class="input-group">
+				<input type=password id=password placeholder="&nbsp;">
+				<label for="">Contraseña</label>
+			</div>
+			<div id="access-box">
+				<input onclick=go() type=button value=Acceso>
+			</div>
+		</form>
 	</div>
 
 </body>

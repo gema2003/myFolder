@@ -3,10 +3,10 @@ const login = document.getElementById('login');
 
 go = () => {
 
-if (password.value === '55053' && login.value === 'Invited'){ 
+     if (password.value === '55053' && login.value === 'Invited'){
         document.form.submit(); 
     } 
     else{ 
-         alert("Access Denied");
+         alert("Acceso Denegado");
     } 
 };

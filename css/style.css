@@ -7,6 +7,10 @@
 }
 
 body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 	font-family: 'Ubuntu';
 	background: linear-gradient(
 		to right top, #800080, #00CED1);
@@ -17,13 +21,14 @@ body {
 	z-index: -1;
 }
 
-#Form-1 {
-	width: 350px;
-	height: 500px;
+#Form_1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 100px auto;
+	height: 100vh;
+	width: 350px;
+	height: 450px;
+	margin: auto;
 	text-align: center;
 	line-height: 1.5rem;
 	border-radius: 2rem;
@@ -37,42 +42,58 @@ body {
 	);
 }
 
-#Form-1 h1 {
-	margin: 1rem 0;
+#Form_1 h1 {
+	margin: 0.5rem 0;
+	padding: 0 0 0.3rem 0;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 6px;
 	text-shadow: 2px 2px 4px #7FFFD4;
 }
 
-#Form-1 p {
-	margin: 1rem 0;
-	color: #F5F5F5;
-}
-
-input {
-	font-size: 1.3rem;
-	border: none;
-	border-radius: 1rem;
-	text-align: center;
-}
-
 #access-box {
 	width: 100%;
 	height: 40px;
+	margin-top: 5px;
 	display: flex;
 	justify-content: center;
-
 }
 
-input[type="text"], input[type="password"] {
+.input-group {
+	position: relative;
+	margin: 20px, 0;
+}
+
+.input-group input {
+	font-size: 1.2rem;
 	height: 2.5rem;
+	border: none;
+	border-radius: 1rem;
+	margin: 0.5rem 0;
+	padding: 0 0.5rem;
+	text-align: center;
 }
 
+.input-group label {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	width: 5rem;
+	transform: translateY(-50%);
+	font-size: 16px;
+	font-weight: bold;
+	color: #8ea4b1;
+	text-align: center;
+	padding: 0 5px;
+	background: transparent;
+	transition: all .5s ease;
+	pointer-events: none;
+}
 
 input[type="button"] {
-	width: 200px;
-	font-size: 1.5rem;
+	width: 150px;
+	border: double;
+	font-size: 1.2rem;
 	font-weight: bold;
 	color: #708090;
 	border-radius: 1rem;
@@ -83,12 +104,29 @@ input[type="button"] {
 
 input[type="button"]:hover {
 	color: #111;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
+	cursor: pointer;
 }
 
-@media (max-width: 350px) {
-	#Form-1 {
-		width: 300px;
-		margin: 30px auto;
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+	transform: translateY(-2.5em) scale(1.0);
+	font-size: 13px;
+	font-weight: normal;
+	border: none;
+	border-radius: 0.5rem;
+	color: #F5F5F5;
+	background: linear-gradient(
+		to right top, #a006b9, #06b9b8);
+}
+
+.input-group input:focus {
+	border: 0.5px solid #8f74ab;
+	outline: 1px solid #8f74ab;
+}
+
+@media only screen and (max-width: 768px) {
+	#Form_1 {
+		display: contents;
 	}
 }
