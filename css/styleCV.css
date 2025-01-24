@@ -110,6 +110,7 @@ body {
 #main {
 	color: #F5F5F5;
 	line-height: 3rem;
+	font-size: clamp(0.5rem, -1.3rem + 8vw, 1.2rem);
 }
 
 #main b {
@@ -477,9 +478,6 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-	.txt {
-/*		font-size: 2.5rem;*/
-	}
 	.navbar {
 		grid-template-rows: repeat(3, 1fr);
 	}
@@ -517,14 +515,8 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-	.txt {
-/*		font-size: 2rem;*/
-	}
 	#aside img {
 		height: 8rem;
-	}
-	#main h2 {
-		font-size: 20px;
 	}
 	#sidebar p {
 		font-size: 0.8rem;
@@ -536,8 +528,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-	.txt {
-/*		font-size: 1.5rem;*/
+	.home-overlay {
+		padding: 0.6rem;
+	}
+	.container {
+		width: 100%;
+		padding: 0rem;
 	}
 	#sidebar p {
 		font-size: 0.6rem;
@@ -549,5 +545,12 @@ body {
 	#logos img {
 		width: 60px;
 		height: 60px;
+	}
+	#studies {
+		padding: 0;
+	}
+	#main {
+		padding: 1rem 0 1rem 0.5rem;
+		line-height: 1.5rem;
 	}
 }

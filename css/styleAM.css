@@ -129,6 +129,12 @@ b {
 	}
 }
 
+@media only screen and (max-width: 1024px) {
+	#content {
+		line-height: 1.5rem;
+	}
+}
+
 @media only screen and (max-width:768px) {
 	@keyframes travel {
 		0% {
@@ -151,11 +157,6 @@ b {
 	}
 
 }
-@media only screen and (max-width: 1024px) {
-	#content {
-		line-height: 1.5rem;
-	}
-}
 
 @media only screen and (max-width: 600px) {
 	@keyframes travel {
@@ -176,5 +177,37 @@ b {
 		100% {
 			right: 77%;
 		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.circle_1 {
+		top: 1%;
+	}
+	.circle_2 {
+		bottom: 1%;
+	}
+	@keyframes travel {
+		0% {
+			left: 5%;
+		}
+
+		100% {
+			left: 82%;
+		}
+	}
+
+	@keyframes travel1 {
+		0% {
+			right: 5%;
+		}
+
+		100% {
+			right: 82%;
+		}
+	}
+	#glass {
+		width: 90%;
+		height: 90vh;
 	}
 }
