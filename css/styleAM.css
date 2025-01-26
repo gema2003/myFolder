@@ -18,7 +18,7 @@ body {
 
 #home-overlay {
 	background-color: rgba(0,0,0,0.2);
-	min-height: inherit;
+	min-height: 100vh;
 	display: grid;
 }
 
