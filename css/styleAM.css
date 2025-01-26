@@ -17,7 +17,7 @@ body {
 
 #home-overlay {
 	background-color: rgba(0,0,0,0.2);
-	min-height: 100vh;
+	height: 100vh;
 	position: relative;
 	display: grid;
 }

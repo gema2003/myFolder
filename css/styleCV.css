@@ -32,13 +32,6 @@ body {
 	place-self: center;
 	border-radius: 2rem;
 	padding: 1rem;
-	/*background: linear-gradient(
-		to right top,
-		rgba(255, 255, 255, 0.8),
-		rgba(255, 255, 255, 0.3),
-		rgba(255, 255, 255, 0.2),  
-		rgba(255, 255, 255, 0.8)
-	);*/
 }
 
 .navbar {
@@ -65,7 +58,7 @@ body {
 .txt {
 	place-self: center;
 	color: #ffffff;
-  	font-size: clamp(1.3rem, -1.7rem + 8vw, 3rem);
+  	font-size: clamp(1.2rem, -1.7rem + 8vw, 3rem);
   	font-weight: 700;
   	text-transform: uppercase;
   	background: repeating-linear-gradient(-45deg,
@@ -108,9 +101,10 @@ body {
 }
 
 #main {
+	text-decoration: none;
 	color: #F5F5F5;
 	line-height: 3rem;
-	font-size: clamp(0.5rem, -1.3rem + 8vw, 1.2rem);
+	font-size: clamp(0.7rem, -1.3rem + 8vw, 1.2rem);
 }
 
 #main b {
@@ -536,11 +530,11 @@ body {
 		padding: 0rem;
 	}
 	#sidebar p {
-		font-size: 0.6rem;
+		font-size: 0.5rem;
 	}
 	#Certificate {
-		width: 90px;
-		height: 80px;
+		width: 82px;
+		height: 90px;
 	}
 	#logos img {
 		width: 60px;
@@ -550,7 +544,11 @@ body {
 		padding: 0;
 	}
 	#main {
-		padding: 1rem 0 1rem 0.5rem;
+		padding: 1rem 0 1rem 0;
+		text-align: center;
 		line-height: 1.5rem;
+	}
+	#referencia p {
+		font-size: 10px;
 	}
 }
