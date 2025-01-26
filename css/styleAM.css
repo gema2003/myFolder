@@ -13,17 +13,18 @@ body {
 	background-position:center;
 	background-attachment: fixed;
 	background-size: cover;
+	min-height: 100vh;
 }
 
 #home-overlay {
 	background-color: rgba(0,0,0,0.2);
-	min-height: 100vh;
+	min-height: inherit;
 	display: grid;
 }
 
 #glass {
-	width: 75%;
-	height: 75%;
+	width: 75vw;
+	height: 75vh;
 	padding: 1rem;
 	place-self: center;
 	border-radius: 2rem;
@@ -180,33 +181,33 @@ b {
 }
 
 @media only screen and (max-width: 480px) {
+	#glass {
+		width: 80vw;
+		height: 80vh;
+	}
 	.circle_1 {
-		top: 1%;
+		top: 6%;
 	}
 	.circle_2 {
-		bottom: 1%;
+		bottom: 6%;
 	}
 	@keyframes travel {
 		0% {
-			left: 5%;
+			left: 6%;
 		}
 
 		100% {
-			left: 82%;
+			left: 80%;
 		}
 	}
 
 	@keyframes travel1 {
 		0% {
-			right: 5%;
+			right: 6%;
 		}
 
 		100% {
-			right: 82%;
+			right: 80%;
 		}
-	}
-	#glass {
-		width: 90vw;
-		height: 90vh;
 	}
 }
