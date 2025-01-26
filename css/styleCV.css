@@ -551,4 +551,7 @@ body {
 	#referencia p {
 		font-size: 10px;
 	}
+	.modal-content {
+		width: 90%;
+	}
 }
