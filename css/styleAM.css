@@ -182,6 +182,7 @@ b {
 @media only screen and (max-width: 480px) {
 	#glass {
 		width: 90vw;
+		height: 80vh;
 	}
 	.circle_1 {
 		top: 6%;
