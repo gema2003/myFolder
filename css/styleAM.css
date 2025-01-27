@@ -160,6 +160,9 @@ b {
 	#glass {
 		width: 90vw;
 	}
+	.circle_2  {
+		bottom: 0%;
+	}
 	@keyframes travel {
 		0% {
 			left: 6%;
