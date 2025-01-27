@@ -553,7 +553,7 @@ body {
 	}
 	.modal-content {
 		width: 95%;
-		height: 85vh;
+		height: 80%;
 	}
 	.modal-body {
   		align-items: initial;
