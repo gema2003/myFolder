@@ -180,13 +180,9 @@ b {
 }
 
 @media only screen and (max-width: 480px) {
-<<<<<<< HEAD
 	#glass {
 		width: 90vw;
-		height: 80vh;
 	}
-=======
->>>>>>> ad8250285620ec28500dc5c693b3b5c47aaacd52
 	.circle_1 {
 		top: 6%;
 	}
