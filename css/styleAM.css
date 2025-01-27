@@ -69,6 +69,10 @@ b {
 
 .circle_1,
 .circle_2 {
+	height: 4rem;
+	width: 4rem;
+	position: absolute;
+	border-radius: 50%;
 	background: linear-gradient(
 		to right bottom, 
 		rgba(255, 255, 255, 0.9), 
@@ -76,16 +80,12 @@ b {
 		rgba(255, 255, 255, 0.4),
 		rgba(255, 255, 255, 0.9)
 	);
-	height: 4rem;
-	width: 4rem;
-	position: absolute;
-	border-radius: 50%;
-	filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 }
 
 .circle_1 {
 	top: 8.5%;
-	right: 12%;
+	left: 12%;
 	animation-name: travel;
 	animation-duration: 7s;
 	animation-delay: 1s;
@@ -98,7 +98,7 @@ b {
 
 .circle_2 {
 	bottom: 8.5%;
-	left: :12%;
+	right: 12%;
 	animation-name: travel1;
 	animation-duration: 7s;
 	animation-delay: 1s;
@@ -154,32 +154,9 @@ b {
 			right: 80%;
 		}
 	}
-
 }
 
 @media only screen and (max-width: 600px) {
-	@keyframes travel {
-		0% {
-			left: 12%;
-		}
-
-		100% {
-			left: 77%;
-		}
-	}
-
-	@keyframes travel1 {
-		0% {
-			right: 12%;
-		}
-
-		100% {
-			right: 77%;
-		}
-	}
-}
-
-@media only screen and (max-width: 480px) {
 	#glass {
 		width: 90vw;
 	}
@@ -189,7 +166,7 @@ b {
 		}
 
 		100% {
-			left: 80%;
+			left: 83%;
 		}
 	}
 
@@ -199,7 +176,7 @@ b {
 		}
 
 		100% {
-			right: 80%;
+			right: 83%;
 		}
 	}
 }
