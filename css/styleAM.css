@@ -183,12 +183,6 @@ b {
 	#glass {
 		width: 90vw;
 	}
-	.circle_1 {
-		top: 6%;
-	}
-	.circle_2 {
-		bottom: 6%;
-	}
 	@keyframes travel {
 		0% {
 			left: 6%;
