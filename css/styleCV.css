@@ -557,5 +557,8 @@ body {
 	}
 	.modal-body {
   		align-items: initial;
+  		overflow: auto;
+  		overflow-x: hidden;
+  		margin-bottom: 0.5rem;
 	}
 }
