@@ -151,6 +151,7 @@ html, body {
   max-height: 520px;
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   padding: 0.5rem;
 }
 
