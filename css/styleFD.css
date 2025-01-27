@@ -83,6 +83,7 @@ html, body {
   display: grid;
   padding: 1rem;
   border-radius: 2rem;
+  user-select: none;
   user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
@@ -148,7 +149,7 @@ html, body {
 
 #info {
   max-height: 520px;
-  overflow: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   padding: 0.5rem;
 }
