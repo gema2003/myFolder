@@ -170,7 +170,9 @@ b {
 	}
 	#content {
 		width: 80vw;
-		height: 90vw;
+	}
+	.circle_2 {
+		bottom: -4%;
 	}
 	@keyframes travel {
 		0% {
