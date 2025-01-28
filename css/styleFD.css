@@ -62,12 +62,6 @@ html, body {
 
 .iframe {
  height: 80vh;
- user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .iframe img {
@@ -75,6 +69,12 @@ html, body {
   height: inherit;
   object-fit: inherit;
   border-radius: 2rem;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   transition: all .3s ease;
 }
 
@@ -142,6 +142,12 @@ html, body {
 #info {
   overflow: auto;
   padding: 0.5rem;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #info span {

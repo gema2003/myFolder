@@ -14,7 +14,7 @@ let isDragging = false,
 slides.forEach((slide, index) => {
   const slideImage = slide.querySelector('.iframe')
   // disable default image drag
-  slideImage.addEventListener('dragstart', (e) => e.preventDefault())
+  // slideImage.addEventListener('dragstart', (e) => e.preventDefault())
   // touch events
   slide.addEventListener('touchstart', touchStart(index))
   slide.addEventListener('touchend', touchEnd)
