@@ -5,9 +5,10 @@ const slider = document.querySelector('.slider-container'),
  const inf = document.getElementById('info');
 
 
- inf.addEventListener('click', function (e, touchMove) {
+ inf.addEventListener('click', function (e, getPositionX) {
        e.preventDefault();
-       touchMove();
+       e.stopPropagation()
+       getPositionX();
  });
 
  console.log(inf);
