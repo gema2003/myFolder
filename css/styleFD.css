@@ -48,6 +48,7 @@ html, body {
 }
 
 .slide{
+  width: 100vw;
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 30%;
@@ -61,18 +62,18 @@ html, body {
 
 .iframe {
  height: 80vh;
- user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .iframe img {
   width: 100%;
   height: inherit;
   object-fit: inherit;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   border-radius: 2rem;
   transition: all .3s ease;
 }
