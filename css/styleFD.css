@@ -70,6 +70,12 @@ html, body {
   object-fit: inherit;
   border-radius: 2rem;
   transition: all .3s ease;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .iframe img:hover {
