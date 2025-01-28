@@ -62,18 +62,18 @@ html, body {
 
 .iframe {
  height: 80vh;
+ user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .iframe img {
   width: 100%;
   height: inherit;
   object-fit: inherit;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   border-radius: 2rem;
   transition: all .3s ease;
 }
@@ -89,12 +89,6 @@ html, body {
   padding: 1rem;
   border-radius: 2rem;
   place-self: center;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   -webkit-backdrop-filter: blur(10px);
   background: linear-gradient(
     to right bottom, 
