@@ -169,7 +169,8 @@ b {
 		width: 90vw;
 	}
 	#content {
-		height: 70%;
+		width: 80vw;
+		height: 90vw;
 	}
 	@keyframes travel {
 		0% {
