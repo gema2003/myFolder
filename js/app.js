@@ -90,7 +90,7 @@ function setSliderPosition() {
 };
 
 // Add logos to Div's
-const block = document.querySelectorAll('.main');
+const block = document.querySelectorAll('.aside');
 
 (() => {
   block.forEach((row) => {
