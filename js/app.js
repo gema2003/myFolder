@@ -2,6 +2,16 @@
 const slider = document.querySelector('.slider-container'),
   slides = Array.from(document.querySelectorAll('.slide'))
 
+ const inf = document.getElementById('info');
+
+
+ inf.addEventListener('click', function (e, slideImage) {
+       e.preventDefault();
+       slideImage();
+ });
+
+ console.log(inf);
+
 // set up our state
 let isDragging = false,
   startPos = 0,
