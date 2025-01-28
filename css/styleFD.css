@@ -76,6 +76,17 @@ html, body {
   opacity: 0.5;
 }
 
+#info {
+  overflow: auto;
+  padding: 0.5rem;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .aside {
   height: 80vh;
   display: grid;
@@ -131,17 +142,6 @@ html, body {
                 1px 2px 1px #919191, 
                 1px 2px 1px #919191,
                 1px 10px 6px rgba(16, 16, 16, 0.4);
-}
-
-#info {
-  overflow: auto;
-  padding: 0.5rem;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 #info span {

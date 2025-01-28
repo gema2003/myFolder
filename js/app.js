@@ -4,14 +4,10 @@ const slider = document.querySelector('.slider-container'),
 
  const inf = document.getElementById('info');
 
-
- inf.addEventListener('click', function (e, previa) {
-       e.preventDefault();
-       e.stopPropagation();
-       previa();
+ inf.addEventListener('touchend', function (e) {
+       console.log('hola');
  });
 
- // console.log(inf);
 
 // set up our state
 let isDragging = false,
@@ -41,7 +37,7 @@ slides.forEach((slide, index) => {
 window.addEventListener('resize', setPositionByIndex)
 
 // prevent menu popup on long press
-window.oncontextmenu = function previa(event) {
+window.oncontextmenu = function (event) {
   event.preventDefault()
   event.stopPropagation()
   return false
