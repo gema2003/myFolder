@@ -5,9 +5,9 @@ const slider = document.querySelector('.slider-container'),
  const inf = document.getElementById('info');
 
 
- inf.addEventListener('click', function (e, slideImage) {
+ inf.addEventListener('click', function (e, touchStart) {
        e.preventDefault();
-       slideImage();
+       touchStart();
  });
 
  console.log(inf);
@@ -51,7 +51,7 @@ function getPositionX(event) {
 }
 
 // use a HOF so we have index in a closure
-function touchStart(index) {
+function touchStart (index) {
   return function (event) {
     currentIndex = index
     startPos = getPositionX(event)
