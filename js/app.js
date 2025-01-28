@@ -5,9 +5,9 @@ const slider = document.querySelector('.slider-container'),
  const inf = document.getElementById('info');
 
 
- inf.addEventListener('click', function (e, touchStart) {
+ inf.addEventListener('touchstart', function (e, touchMove) {
        e.preventDefault();
-       touchStart();
+       touchMove();
  });
 
  console.log(inf);
