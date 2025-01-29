@@ -2,13 +2,6 @@
 const slider = document.querySelector('.slider-container'),
   slides = Array.from(document.querySelectorAll('.slide'))
 
- // const inf = document.getElementById('info');
-
- // inf.addEventListener('touchend', function (e) {
- //       console.log('hola');
- // });
-
-
 // set up our state
 let isDragging = false,
   startPos = 0,
@@ -114,6 +107,21 @@ const block = document.querySelectorAll('.aside');
 });
 
 } )();
+
+// Custom Scroll
+
+const scroll = document.querySelectorAll('#info');
+
+(function($){
+    $(window).on("load",function(){
+        $(scroll).mCustomScrollbar({
+          theme:"rounded-dots",
+          scrollButtons:{ enable: true }
+        });
+    });
+})(jQuery);
+
+
 
 
 
