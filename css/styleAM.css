@@ -13,6 +13,7 @@ body {
 	background-position:center;
 	background-attachment: fixed;
 	background-size: cover;
+	min-height: 100vh;
 }
 
 #home-overlay {
@@ -20,14 +21,14 @@ body {
 	min-height: 100vh;
 	position: relative;
 	display: grid;
+	justify-items: center;
+	align-items: center;
 }
 
 #glass {
 	width: 75vw;
 	height: 75%;
 	padding: 1rem;
-	display: grid;
-	place-self: center;
 	border-radius: 2rem;
 	background: #F5F5F5;
 	background: linear-gradient(
