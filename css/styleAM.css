@@ -18,7 +18,7 @@ body {
 
 #home-overlay {
 	background-color: rgba(0,0,0,0.2);
-	max-height: 100vh;
+	min-height: 100vh;
 	position: relative;
 	display: grid;
 	justify-items: center;
@@ -27,7 +27,7 @@ body {
 
 #glass {
 	width: 75vw;
-	height: 75%;
+	height: 75vh;
 	padding: 1rem;
 	border-radius: 2rem;
 	background: #F5F5F5;
