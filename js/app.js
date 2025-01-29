@@ -123,7 +123,6 @@ const scroll = document.querySelectorAll('#info');
 
 // Image blocking
 
-window.ondragstart = function () { return false };
-
+(window.ondragstart = () => {return false})();
 
 

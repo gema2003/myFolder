@@ -127,7 +127,7 @@ html, body {
   justify-items: center;
   align-items: center;
   grid-gap: 2px;
-  user-select: none;
+  pointer-events: none;
 }
 
 #logos img {
