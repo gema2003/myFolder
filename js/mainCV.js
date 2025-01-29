@@ -27,7 +27,7 @@ accordionItemHeader.forEach(accordionItemHeader => {
 
 // modal buttons
 
-btnOpen.onclick= () =>{
+btnOpen.onclick = () =>{
 	modal.classList.toggle('move');
 	content.classList.toggle('show');
 };
@@ -52,5 +52,7 @@ element.innerHTML = `<b>Edad :</b> ${age} años`;
 
 const row = document.getElementById('main');
 row.appendChild(element);
+
+
 
 

@@ -123,7 +123,7 @@ const scroll = document.querySelectorAll('#info');
 
 
 
-
+window.ondragstart = () => {return false}
 
 
 
