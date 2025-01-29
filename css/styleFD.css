@@ -140,6 +140,12 @@ html, body {
   user-select: none;
   align-items: center;
   justify-items: center;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   padding: 0.5rem 0 0.5rem 0;
   text-shadow: 1px 1px 1px #919191, 
                 1px 2px 1px #919191, 

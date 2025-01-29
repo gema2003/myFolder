@@ -121,10 +121,9 @@ const scroll = document.querySelectorAll('#info');
     });
 })(jQuery);
 
+// Image blocking
 
-
-window.ondragstart = () => {return false}
-
+window.ondragstart = function () { return false };
 
 
 
