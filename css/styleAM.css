@@ -13,12 +13,12 @@ body {
 	background-position:center;
 	background-attachment: fixed;
 	background-size: cover;
-	min-height: 100vh;
+	max-height: 100vh;
 }
 
 #home-overlay {
 	background-color: rgba(0,0,0,0.2);
-	min-height: 100vh;
+	max-height: 100vh;
 	position: relative;
 	display: grid;
 	justify-items: center;
