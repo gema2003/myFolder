@@ -18,7 +18,8 @@ body {
 #home-overlay {
 	background-color: rgba(0,0,0,0.2);
 	min-height: 100vh;
-	position: relative;
+	min-width: 100vw;
+	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
