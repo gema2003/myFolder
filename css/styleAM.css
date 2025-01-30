@@ -24,16 +24,8 @@ body {
 
 #container {
 	display: flex;
-	align-items: end;
+	align-items: center;
 	min-height: 100vh;
-	width: 15rem;
-	border: 1px solid #000;
-}
-
-#prueba {
-	border: 1px solid #000;
-	width: inherit;
-	height: 10rem;
 }
 
 #glass {
