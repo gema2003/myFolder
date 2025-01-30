@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Ubuntu';
-	background-image: url("../images/bkgrd.jpg");
+	background-image: url("../images/background2.jpg");
 	background-repeat: no-repeat;
 	background-position:center;
 	background-attachment: fixed;
@@ -18,14 +18,11 @@ body {
 #home-overlay {
 	background-color: rgba(0,0,0,0.2);
 	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-}
-
-#container {
+	min-width: 100vw;
+	position: absolute;
 	display: flex;
 	align-items: center;
-	min-height: 100vh;
+	justify-content: center;
 }
 
 #glass {
@@ -35,7 +32,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: absolute;
 	border-radius: 2rem;
 	background: #F5F5F5;
 	background: linear-gradient(
@@ -177,6 +173,9 @@ b {
 	}
 	#content {
 		width: 80vw;
+	}
+	.circle_2 {
+/*		bottom: -4%;*/
 	}
 	@keyframes travel {
 		0% {
