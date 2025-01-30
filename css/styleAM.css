@@ -35,6 +35,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
 	border-radius: 2rem;
 	background: #F5F5F5;
 	background: linear-gradient(
@@ -176,9 +177,6 @@ b {
 	}
 	#content {
 		width: 80vw;
-	}
-	.circle_2 {
-/*		bottom: -4%;*/
 	}
 	@keyframes travel {
 		0% {
