@@ -83,12 +83,13 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-#home-heading h3 span {
+#home-heading h3 {
 	background: linear-gradient(#f0cf6f, #d56abc);
 	-webkit-background-clip: text;
 	color: transparent;
 	font-weight: 400;
-	text-transform: lowercase;
+    line-height: 1.5rem;
+	text-transform: capitalize;
 }
 #home-heading p {
 	background: linear-gradient(#32CD32, #00FFFF);
