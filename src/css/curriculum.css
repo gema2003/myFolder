@@ -167,6 +167,9 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 99;
 }
+#sidebar a:last-of-type::after {
+	top: 110% !important;
+}
 #sidebar a:hover::after {
     opacity: 1;
     transform: translateX(-50%) scale(1); /* Crece con un efecto elástico genial */
