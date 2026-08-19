@@ -28,7 +28,7 @@ const SecurityModule = (() => {
             if (_validateCredentials(loginInput, passwordInput)) {
                 _authenticated = true;
                 sessionStorage.setItem('sesion_modulo_activa', 'true');
-                window.location.replace('../src/html/menu.html')
+                window.location.replace('src/html/menu.html')
                 // document.form.submit();
             } else {
                 alert("Acceso Denegado: Usuario o contraseña incorrectos");
