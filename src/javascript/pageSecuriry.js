@@ -8,6 +8,6 @@ window.addEventListener('pageshow', () => {
         alert("Acceso denegado. Tu sesión expiró o es inválida.");
         
         // Lo saca volando directo a tu pantalla de inicio limpia
-        window.location.replace('/index.html'); 
+        window.location.replace('../../index.html'); 
     }
 });
