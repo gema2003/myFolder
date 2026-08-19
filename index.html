@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./src/css/login.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<title>Login</title>
+</head>
+<body>
+
+	<div id="Form_1" class="main">
+		<form name=form class="module" action="./src/html/menu.html" method="POST">
+			<img src="./assets/inicio.png" alt="IMGLogo">
+			<h1>curriculum</h1>
+			<div class="input-group">
+				<input type=text id=login placeholder="&nbsp;">
+				<label for="">User</label>
+			</div>
+			<div class="input-group">
+				<input type=password id=password placeholder="&nbsp;">
+				<label for="">Password</label>
+				<button type="button" id="toggle-password" class="btn-eye">
+					<img src="./assets/svg/block.svg" alt="">
+				</button>
+			</div>
+			<div id="access-box" class="box-btn">
+			    <input id="btn-acceso" type="button" value="Login">
+			</div>
+		</form>
+	</div>
+
+</body>
+	<script src="./src/javascript/login.js"></script>
+</html>

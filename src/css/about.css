@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Ubuntu';
+	background-image: url("../../assets/background/about.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	/* 💡 Candado extra: Si el fondo falla, que pinte un fondo oscuro en vez de blanco */
+	background-color: #0b132b; 
+}
+
+#home-overlay {
+	background-color: rgba(0,0,0,0.2);
+	/* 💡 Cambiamos absolute por fixed y vh por dvh para blindar el móvil */
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 100vh;
+	min-height: 100dvh; 
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#glass {
+	width: 80vw;
+	height: auto;
+	min-height: 80vh;
+    min-height: 80dvh;
+	padding: 1.5rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	background: #F5F5F5;
+	background: linear-gradient(
+		to right bottom, 
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.5),
+		rgba(255, 255, 255, 0.5), 
+		rgba(255, 255, 255, 0.9)
+	);
+
+}
+
+#content {
+	width: 95%;
+	/* 💡 El contenedor del texto también se adapta de forma automática */
+    height: auto;
+    max-height: 70vh; 
+    max-height: 70dvh;
+	overflow-y: auto; /* Mantiene un scroll sutil si el texto es excesivamente largo */
+  	overflow-x: hidden;
+	color: #FAEBD7;
+	line-height: 2.3rem;
+    font-size: 0.95rem;
+    padding: 1.2rem;
+	border-radius: 2rem;
+	backdrop-filter: blur(7px);
+	background: linear-gradient(
+		to left bottom,
+		rgba(0, 0, 0, 0.1),
+		rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.7)
+	);
+	-webkit-backdrop-filter: blur(12px);
+	display: grid;
+	user-drag: none;
+  	-webkit-user-drag: none;
+  	user-select: none;
+ 	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+}
+
+P {
+	place-self: center;
+}
+
+b {
+    color: #E0FFFF;
+}
+.circle_1,
+.circle_2 {
+	height: 4rem;
+	width: 4rem;
+	position: absolute;
+	border-radius: 50%;
+	background: linear-gradient(
+		to right bottom, 
+		rgba(255, 255, 255, 0.9), 
+		rgba(255, 255, 255, 0.4),
+		rgba(255, 255, 255, 0.4),
+		rgba(255, 255, 255, 0.9)
+	);
+	-webkit-backdrop-filter: blur(2px);
+}
+
+.circle_1 {
+	top: 5.5%; 
+	right: 12%;
+	animation-name: travel;
+	animation-duration: 7s;
+	animation-delay: 1s;
+	animation-fill-mode: initial;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.8,0.8,1.48,0.04);
+
+}
+
+.circle_2 {
+	bottom: 5.5%;
+	right: 12%;
+	animation-name: travel1;
+	animation-duration: 7s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.8,0.8,1.48,0.04);
+}
+
+@keyframes travel {
+	0% {
+		left: 10%;
+	}
+
+	100% {
+		left: 85%;
+	}
+}
+
+@keyframes travel1 {
+	0% {
+		right: 10%;
+	}
+
+	100% {
+		right: 85%;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	#glass {
+		width: 92vw;
+	}
+	#content {
+		line-height: 1.5rem;
+		width: 100%;
+	}
+	@keyframes travel {
+		0% {
+			left: 4%;
+		}
+
+		100% {
+			left: 80%;
+		}
+	}
+
+	@keyframes travel1 {
+		0% {
+			right: 4%;
+		}
+
+		100% {
+			right: 80%;
+		}
+	}
+}

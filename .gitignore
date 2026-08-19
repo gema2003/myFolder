@@ -1,0 +1,3 @@
+echo "._*" >> .gitignore
+echo ".DS_Store" >> .gitignore
+echo "node_modules/" >> .gitignore

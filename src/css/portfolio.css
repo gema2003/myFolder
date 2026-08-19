@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --shadow: rgba(0, 0, 0, 0.9);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url("../../assets/background/portfolio.jpg");
+  background-color: #0b132b; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* CLASE UTILITARIA: Para evitar repetir código de bloqueo de selección */
+.no-select {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.home-overlay {
+  background-color: rgba(0,0,0,0.2);
+    position: fixed; /* 💡 Cambiado a fixed para asegurar pantalla completa real */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh; /* Dispositivos móviles */
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.fa-share {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #cfcfcf;
+  font-size: 2.5rem;
+  pointer-events: none; /* Evita que estorbe al hacer clic o arrastrar */
+}
+.slider-container {
+  height: 90vh;
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+.slide {
+  width: 100vw;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 35%; /* Subido a 35% para dar más aire al texto largo */
+  grid-gap: 1rem;
+  color: #F5F5F5;
+}
+
+.main {
+  place-self: center;
+  width: 100%;
+}
+
+.iframe {
+  height: 80vh;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 5px 5px 20px -1px var(--shadow);
+  border-radius: 2rem;
+  overflow: hidden; /* Evita que la imagen se salga de las esquinas redondeadas */
+}
+
+.iframe img {
+  width: 100%;
+  height: 100%;
+  object-fit: inherit; /* CORREGIDO: Garantiza que las capturas de PC/Móvil no se deformen */
+  border-radius: 2rem;
+  transition: all .3s ease;
+}
+
+.iframe img:hover {
+  opacity: 0.7;
+}
+
+.aside {
+  height: 80vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr; /* Estructura interna fija */
+  grid-gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  place-self: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(
+    to right bottom, 
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.85)
+  );
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .slide .iframe {
+  transform: scale(0.95);
+  box-shadow: 5px 5px 10px -1px var(--shadow);
+}
+
+/* CORREGIDO: Cambio de ID a Clase (.logos-container) */
+.logos-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 8px;
+  pointer-events: none;
+}
+
+.logos-container img {
+  width: 100%;
+  height: auto;
+  max-height: 40px; /* Evita que logos verticales se deformen */
+  object-fit: contain;
+}
+
+/* CORREGIDO: Cambio de ID a Clase (.slide-title) */
+.slide-title {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #00e5ff;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-shadow: 1px 1px 1px #919191, 
+                1px 2px 1px #919191, 
+                1px 10px 6px rgba(16, 16, 16, 0.4);
+}
+
+/* CORREGIDO: Cambio de ID a Clase (.slide-info) */
+.slide-info {
+  overflow-y: auto; /* Permite scroll interno si el texto es muy largo */
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.slide-info span {
+  font-size: 11px;
+  color: #FFE4E1;
+  font-weight: bold;
+}
+
+.slide-info p {
+  text-decoration: none;
+  color: #00FF00;
+}
+
+/* CORREGIDO: Estilo para las listas que reemplaza los <br> eliminados */
+.slide-info ul {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.slide-info ul li {
+  margin-bottom: 1rem; /* Separación limpia entre viñetas */
+}
+
+/* SCROLLBAR NATIVO PARA EL TEXTO (Simula rounded-dots sin jQuery) */
+.slide-info::-webkit-scrollbar {
+  width: 6px;
+}
+.slide-info::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.slide-info::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+.slide-info::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+.tech-badges {
+  display: flex; 
+  gap: 8px; 
+  flex-wrap: wrap; 
+  margin: 10px 0;
+}
+.tech-badges span {
+  font-size: 10px; 
+  color: #00e5ff; 
+  background: rgba(0, 229, 255, 0.1); 
+  border: 1px solid rgba(0, 229, 255, 0.3); 
+  padding: 2px 6px; 
+  border-radius: 4px;
+}
+
+
+/* --- RESPONSIVE DESIGN --- */
+
+@media only screen and (max-width: 1024px) {
+  .slide {
+    grid-template-columns: 1fr 40%;
+  }
+  .fa-share {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-container {
+    height: 77vh;
+  }
+  .slide {
+    grid-template-columns: 100%; /* Una sola columna en tabletas/móviles grandes */
+    grid-template-rows: repeat(2, 50%);
+    grid-gap: .5rem;
+  }
+  .iframe {
+    height: 100%;
+  }
+  .aside {
+    height: 100%;
+    width: 100%;
+  }
+  .main {
+    height: 100%;
+  }
+  /* CORREGIDO: Error ortográfico 'eft' a 'left' y centrado correcto */
+  .fa-share {
+    font-size: 1.8rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logos-container img {
+    width: 70%;
+  }
+}
+
