@@ -12,7 +12,7 @@ const _expulsarUsuario = (mensaje) => {
 
     /* 2. 💡 CORRECCIÓN CLAVE: Usamos la raíz limpia '/' para que conecte 
           perfectamente con tu portada en 'serve' sin usar extensiones */
-    window.location.replace('/'); 
+    window.location.replace('../../index.html'); 
 };
 
 // RELOJ AUTOMÁTICO: Resetea el tiempo si el usuario está interactuando en el menú

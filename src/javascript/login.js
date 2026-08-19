@@ -64,10 +64,10 @@ document.getElementById('toggle-password').addEventListener('click', function ()
     
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
-        this.innerHTML = '<img src="../assets/svg/unblock.svg" alt="">'; // Cambia el icono al estar visible
+        this.innerHTML = '<img src="assets/svg/unblock.svg" alt="">'; // Cambia el icono al estar visible
     } else {
         passwordInput.type = 'password';
-        this.innerHTML = '<img src="../assets/svg/block.svg" alt="">'; // Vuelve al icono original
+        this.innerHTML = '<img src="assets/svg/block.svg" alt="">'; // Vuelve al icono original
     }
 });
 
